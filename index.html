@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icons8-sunny-100.png">
 </head>
 <body>
     
+    <div class="container">
+        
+                <div class="field">
+                    <input type="text" class="inputCity" placeholder="Enter City 🌏">
+                    <button onclick="getInfo()" class="getInfoButton">Submit </button>
+                </div>
+            <div class="twoParts">
+                <div class="firstBox">
+                    <div class="output">
+                    <div class="cel">
+                        <img draggable="false" class="celImg" src="img/temperatureIc.png" alt="">
+                        <p class="resCel"></p>
+                    </div>
+                    <div class="fer">
+                        <img draggable="false" class="ferImg" src="img/ferenhaitImg.png" alt="">
+                        <p class="resFer"></p>
+                    </div>
+                    <div class="wind">
+                        <img draggable="false" class="windImg" src="img/wind.png" alt="">
+                        <p class="resWind"></p>
+                    </div>
+                    </div>
+                </div>
+            <div class="secondBox">
+                <img draggable="false" class="imgLogo">
+            </div>
+        </div>
+    </div>
 
 
     <script src="main.js"></script>
